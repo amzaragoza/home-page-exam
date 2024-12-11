@@ -1,0 +1,149 @@
+/*CSS RESET RULE*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #fef5ff;
+}
+
+/*Start Hero*/
+.hero {
+    background: linear-gradient(to bottom right, #ffd1ff, #f0b6d4); /* Soft gradient with pinkish hues */
+    color: #6d309e;
+    text-align: center;
+/*    padding: 80px 15px;*/
+/*    position: relative;*/
+}
+
+.hero h1 {
+	font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff1493; /* Bright pink for a girly look */
+    text-shadow: 2px 2px 6px rgba(255, 105, 180, 0.5), 0 0 10px rgba(255, 105, 180, 0.6);
+    animation: sparkle 2s infinite alternate;
+}
+
+.hero p {
+	font-size: 1.5rem;
+    color: #ff1493;
+    text-shadow: 1px 1px 6px rgba(255, 105, 180, 0.3), 0 0 8px rgba(255, 105, 180, 0.5);
+}
+
+/* Sparkling Animation */
+@keyframes sparkle {
+    0% {
+        text-shadow: 0 0 2px #ff69b4, 0 0 5px #ff69b4, 0 0 8px #ff1493, 0 0 10px #ff1493;
+    }
+    50% {
+        text-shadow: 0 0 4px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff1493, 0 0 20px #ff1493;
+    }
+    100% {
+        text-shadow: 0 0 2px #ff69b4, 0 0 5px #ff69b4, 0 0 8px #ff1493, 0 0 10px #ff1493;
+    }
+}
+/*End Hero*/
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff69b4; /* Hot pink */
+    text-shadow: 2px 2px 8px rgba(255, 105, 180, 0.7); /* Sparkling effect */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none; /* No border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    background: #fff;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Hover shadow */
+}
+
+.card-title {
+	color: #6d309e;
+}
+
+.card img {
+	height: 200px;
+	object-fit: cover;
+}
+
+/* Custom Bootstrap-like button class */
+.btn-pink {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+}
+
+.btn-pink:hover {
+    background-color: #ff1493;
+    border-color: #ff1493;
+}
+
+.footer, .footer a {
+	background-color: #ff1493; /*#6d309e;*/
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+}
+
+/*Custom NavBar Styles to make my webpage more girly :) */
+
+/* Custom Text Shadow for Girly Effect */
+.text-shadow {
+    text-shadow: 1px 1px 3px rgba(255, 105, 180, 0.3); /* Soft pinkish glow */
+}
+
+/* Sparkling Effect on Brand Name */
+.sparkling {
+    animation: sparkle 1.5s infinite; /* Sparkling animation applied */
+    color: #ff1493; /* Pink color */
+}
+
+.navbar-brand {
+	font-family: 'Cursive', sans-serif;
+	font-size: 1rem !important;
+	color: #b15dee !important;
+	transition: font-size 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Navbar Brand (Girly Style) */
+.navbar-brand:hover {
+    color: #ff1493 !important;  /* Hot pink color */
+    text-shadow: 1px 1px 4px rgba(255, 105, 180, 0.5); /* Very subtle glow */
+    font-size: 0.45rem; /* Slightly smaller font size on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth color transition */
+}
+
+/* Custom pink color for navbar brand */
+.text-pink {
+    color: #ff1493 !important; /* Deep pink color */
+}
+
+/* Additional styling for Navbar items (to match girly aesthetic) */
+.navbar-nav .nav-link {
+    color: #ff69b4 !important;  /* Soft pink color for links */
+    font-family: 'Dancing Script', cursive; /* Fancy cursive font */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff1493 !important;  /* Hot pink on hover */
+}
+
+/* Optional: Styling for the Navbar background to be more girly */
+.bg-light {
+    background-color: #ffe4e1 !important; /* Light pink background */
+}
